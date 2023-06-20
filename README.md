@@ -1,55 +1,12 @@
 <p align="center">
-  <img src="./example/IAM.png">
-</p>
-
-# Inpaint Anything: Segment Anything Meets Image Inpainting
-Inpaint Anything can inpaint anything in **images**, **videos** and **3D scenes**!
-- Authors: Tao Yu, Runseng Feng, Ruoyu Feng, Jinming Liu, Xin Jin, Wenjun Zeng and Zhibo Chen.
-- Institutes: University of Science and Technology of China; Eastern Institute for Advanced Study.
-- [[Paper](https://arxiv.org/abs/2304.06790)] [[Website](https://huggingface.co/spaces/InpaintAI/Inpaint-Anything)] [[Hugging Face Homepage](https://huggingface.co/InpaintAI)]
-<p align="center">
+	<p float="left">
+	  <img src="./example/masks1.png?raw=true" width="37.25%" />
+	  <img src="./example/masks2.jpg?raw=true" width="61.5%" /> 
+	</p>
   <img src="./example/MainFramework.png" width="100%">
 </p>
 
-TL; DR: Users can select any object in an image by clicking on it. With powerful vision models, e.g., [SAM](https://arxiv.org/abs/2304.02643), [LaMa](https://arxiv.org/abs/2109.07161) and [Stable Diffusion (SD)](https://arxiv.org/abs/2112.10752), **Inpaint Anything** is able to remove the object smoothly (i.e., *Remove Anything*). Further, prompted by user input text, Inpaint Anything can fill the object with any desired content (i.e., *Fill Anything*) or replace the background of it arbitrarily (i.e., *Replace Anything*).
-
-## 📜 News
-[2023/4/30] [Remove Anything Video](#remove-anything-video) available! You can remove any object from a video!\
-[2023/4/24] [Local web UI](./app) supported! You can run the demo website locally!\
-[2023/4/22] [Website](https://huggingface.co/spaces/InpaintAI/Inpaint-Anything) available! You can experience Inpaint Anything through the interface!\
-[2023/4/22] [Remove Anything 3D](#remove-anything-3d) available! You can remove any 3D object from a 3D scene!\
-[2023/4/13] [Technical report on arXiv](https://arxiv.org/abs/2304.06790) available!
-
-## 🌟 Features
-- [x] [**Remove** Anything](#remove-anything)
-- [x] [**Fill** Anything](#fill-anything)
-- [x] [**Replace** Anything](#replace-anything)
-- [x] [Remove Anything **3D**](#remove-anything-3d) (<span style="color:red">🔥NEW</span>)
-- [ ] Fill Anything **3D**
-- [ ] Replace Anything **3D**
-- [x] [Remove Anything **Video**](#remove-anything-video) (<span style="color:red">🔥NEW</span>)
-- [ ] Fill Anything **Video**
-- [ ] Replace Anything **Video**
-
-
-## 💡 Highlights
-- [x] Any aspect ratio supported
-- [x] 2K resolution supported
-- [x] [Technical report on arXiv](https://arxiv.org/abs/2304.06790) available (<span style="color:red">🔥NEW</span>)
-- [x] [Website](https://huggingface.co/spaces/InpaintAI/Inpaint-Anything) available (<span style="color:red">🔥NEW</span>)
-- [x] [Local web UI](./app) available (<span style="color:red">🔥NEW</span>)
-- [x] Multiple modalities (i.e., image, video and 3D scene) supported (<span style="color:red">🔥NEW</span>)
-
-<!-- ## Updates
-| Date | News |
-| ------ | --------
-| 2023-04-12 | Release the Fill Anything feature | 
-| 2023-04-10 | Release the Remove Anything feature |
-| 2023-04-10 | Release the first version of Inpaint Anything | -->
-
 ## <span id="remove-anything">📌 Remove Anything</span>
-
-
 <!-- <table>
   <tr>
     <td><img src="./example/remove-anything/dog/with_points.png" width="100%"></td>
@@ -402,32 +359,3 @@ The `--mask_idx` is usually set to 2, which typically is the most confident mask
       <td><img src="./example/remove-anything-video/dog-gooses/removed.gif" width="100%"></td>
     </tr>
 </table>
-
-## Acknowledgments
-- [Segment Anything](https://github.com/facebookresearch/segment-anything)
-- [LaMa](https://github.com/advimman/lama)
-- [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
-- [OSTrack](https://github.com/botaoye/OSTrack)
-- [STTN](https://github.com/researchmm/STTN)
-
- ## Other Interesting Repositories
-- [Awesome Anything](https://github.com/VainF/Awesome-Anything)
-- [Composable AI](https://github.com/Adamdad/Awesome-ComposableAI)
-- [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything)
-
-## Citation
-If you find this work useful for your research, please cite us:
-```
-@article{yu2023inpaint,
-  title={Inpaint Anything: Segment Anything Meets Image Inpainting},
-  author={Yu, Tao and Feng, Runseng and Feng, Ruoyu and Liu, Jinming and Jin, Xin and Zeng, Wenjun and Chen, Zhibo},
-  journal={arXiv preprint arXiv:2304.06790},
-  year={2023}
-}
-```
-  
-<p align="center">
-  <a href="https://star-history.com/#geekyutao/Inpaint-Anything&Date">
-    <img src="https://api.star-history.com/svg?repos=geekyutao/Inpaint-Anything&type=Date" alt="Star History Chart">
-  </a>
-</p>
