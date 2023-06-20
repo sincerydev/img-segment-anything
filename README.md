@@ -3,7 +3,6 @@
 	  <img src="./example/masks1.png?raw=true" width="37.25%" />
 	  <img src="./example/masks2.jpg?raw=true" width="61.5%" /> 
 	</p>
-  <img src="./example/MainFramework.png" width="100%">
 </p>
 
 ## <span id="remove-anything">📌 Remove Anything</span>
@@ -58,21 +57,6 @@ python remove_anything.py \
 You can change `--coords_type key_in` to `--coords_type click` if your machine has a display device. If `click` is set, after running the above command, the image will be displayed. (1) Use *left-click* to record the coordinates of the click. It supports modifying points, and only last point coordinates are recorded. (2) Use *right-click* to finish the selection.
 
 ### Demo
-<table>
-  <tr>
-    <td><img src="./example/remove-anything/person/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/person/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/person/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td><img src="./example/remove-anything/bridge/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/bridge/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/bridge/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table>
 
 <table>
   <tr>
@@ -141,29 +125,11 @@ python fill_anything.py \
 ### Demo
 
 <table>
-  <caption align="center">Text prompt: "a camera lens in the hand"</caption>
-    <tr>
-      <td><img src="./example/fill-anything/sample2/with_points.png" width="100%"></td>
-      <td><img src="./example/fill-anything/sample2/with_mask.png" width="100%"></td>
-      <td><img src="./example/fill-anything/sample2/filled_with_mask.png" width="100%"></td>
-    </tr>
-</table>
-
-<table>
   <caption align="center">Text prompt: "a Picasso painting on the wall"</caption>
     <tr>
       <td><img src="./example/fill-anything/sample5/with_points.png" width="100%"></td>
       <td><img src="./example/fill-anything/sample5/with_mask.png" width="100%"></td>
       <td><img src="./example/fill-anything/sample5/filled_with_mask.png" width="100%"></td>
-    </tr>
-</table>
-
-<table>
-  <caption align="center">Text prompt: "an aircraft carrier on the sea"</caption>
-    <tr>
-      <td><img src="./example/fill-anything/sample3/with_points.png" width="100%"></td>
-      <td><img src="./example/fill-anything/sample3/with_mask.png" width="100%"></td>
-      <td><img src="./example/fill-anything/sample3/filled_with_mask.png" width="100%"></td>
     </tr>
 </table>
 
@@ -222,14 +188,6 @@ python replace_anything.py \
 ```
 
 ### Demo
-<table>
-  <caption align="center">Text prompt: "sit on the swing"</caption>
-    <tr>
-      <td><img src="./example/replace-anything/dog/with_points.png" width="100%"></td>
-      <td><img src="./example/replace-anything/dog/with_mask.png" width="100%"></td>
-      <td><img src="./example/replace-anything/dog/replaced_with_mask.png" width="100%"></td>
-    </tr>
-</table>
 
 <table>
   <caption align="center">Text prompt: "a bus, on the center of a country road, summer"</caption>
@@ -240,34 +198,8 @@ python replace_anything.py \
     </tr>
 </table>
 
-<table>
-  <caption align="center">Text prompt: "breakfast"</caption>
-    <tr>
-      <td><img src="./example/replace-anything/000000029675/with_points.png" width="100%"></td>
-      <td><img src="./example/replace-anything/000000029675/with_mask.png" width="100%"></td>
-      <td><img src="./example/replace-anything/000000029675/replaced_with_mask.png" width="100%"></td>
-    </tr>
-</table>
-
-<table>
-  <caption align="center">Text prompt: "crossroad in the city"</caption>
-    <tr>
-      <td><img src="./example/replace-anything/000000000724/with_points.png" width="100%"></td>
-      <td><img src="./example/replace-anything/000000000724/with_mask.png" width="100%"></td>
-      <td><img src="./example/replace-anything/000000000724/replaced_with_mask.png" width="100%"></td>
-    </tr>
-</table>
-
 ## <span id="remove-anything-3d">📌 Remove Anything 3D</span>
 Remove Anything 3D can remove any object from a 3D scene! We release some results below. (Code and implementation details will be released soon.)
-
-<table>
-    <tr>
-      <td><img src="./example/remove-anything-3d/horns/org.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-3d/horns/mask.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-3d/horns/result.gif" width="100%"></td>
-    </tr>
-</table>
 
 <table>
     <tr>
@@ -336,26 +268,9 @@ The `--mask_idx` is usually set to 2, which typically is the most confident mask
     </tr>
 </table>
 
-<table>
-    <tr>
-      <td><img src="./example/remove-anything-video/surf/original.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/surf/mask.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/surf/removed.gif" width="100%"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-      <td><img src="./example/remove-anything-video/tennis-vest/original.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/tennis-vest/mask.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/tennis-vest/removed.gif" width="100%"></td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-      <td><img src="./example/remove-anything-video/dog-gooses/original.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/dog-gooses/mask.gif" width="100%"></td>
-      <td><img src="./example/remove-anything-video/dog-gooses/removed.gif" width="100%"></td>
-    </tr>
-</table>
+## Acknowledgments
+- [Segment Anything](https://github.com/facebookresearch/segment-anything)
+- [LaMa](https://github.com/advimman/lama)
+- [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
+- [OSTrack](https://github.com/botaoye/OSTrack)
+- [STTN](https://github.com/researchmm/STTN)
